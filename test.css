@@ -1,0 +1,121 @@
+@-webkit-keyframes egg-left-animation {
+    0% {
+      transform: rotate(-20deg);
+    }
+
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  @keyframes egg-left-animation {
+    0% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  @-webkit-keyframes egg-right-animation {
+    0% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+  
+  @keyframes egg-right-animation {
+    0% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Lobster');
+
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    margin-top: 3em;
+    background-color: #F5B1AC; 
+  }
+  
+  h1 {
+    font-family: Lobster;
+    font-size: 45px;
+    color: #6D59A7;;
+    text-shadow: 3px 0px 0px white;
+    margin-bottom: 50px;
+  }
+  
+.eggs {
+    margin: 1em auto;
+    text-align: center;
+  }
+
+.egg {
+    width: 140px;
+    height: 200px;
+    margin: 1em auto;
+    border: 3px solid #ccc;
+
+    border-radius: 50%/60% 60% 40% 40%;
+    background: #FBE9E7;
+    display: inline-block;
+    overflow: hidden;
+    grid-template-rows: repeat(5, 20%);  
+  }
+  .egg-left {
+      transform: rotate(-10deg);
+      animation: egg-left-animation 0.8s linear 0s infinite alternate;
+  }
+  .egg-right {
+    transform: rotate(25deg);
+    background-color: #EC407A;
+}
+  .stripe {
+    border-top: 2px solid #ccc;
+    height: 20%;
+}
+
+.stripe:nth-child(1) {
+    background-color: #FFBDE8;
+  }
+  
+.stripe:nth-child(2) {
+    background-color: #BDE8FF;
+  }
+  
+.stripe:nth-child(3) {
+    background-color: #E8FFBD;
+  }
+  
+.stripe:nth-child(4) {
+    background-color: #FFE8BD;
+  }
+  
+.stripe:nth-child(5) {
+    background-color: #E8BDFF;
+  }
+
+  .element {
+    -webkit-animation: nazwa 3s infinite;
+    -moz-animation: nazwa 3s infinite;
+    -o-animation: nazwa 3s infinite;
+     animation: nazwa 3s infinite;
+  }
+
+  #logo {
+  background: #fff url('logo.png') no-repeat left top;
+  height: 55px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  padding: 2px 20px 32px 5px;
+  position: relative;
+  }
